@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+
+li {
+  list-style: none;
+}
+
+.tab {
+  max-width: 500px;
+  /* ✅ 修改寬度 */
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.tab-nav {
+  display: flex;
+  /* ✅ 將標題與 ul 排成一行 */
+  align-items: center;
+  /* 垂直置中 */
+  gap: 12px;
+  /* 標題與 ul 之間留空 */
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.tab-nav h3 {
+  font-size: 16px;
+  color: #333;
+  white-space: nowrap;
+  /* 防止 h3 換行 */
+}
+
+.tab-nav ul {
+  display: flex;
+}
+
+.tab-nav li a {
+  margin-left: 5px;
+  padding: 5px 12px;
+  height: 40px;
+  width: 70px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  background-color: #f0f0f0;
+  color: #333;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+.tab-nav li a.active {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.tab-content {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  position: relative;
+}
+
+.tab-content .item {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-content .item img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.tab-content .item.active {
+  display: flex;
+}
