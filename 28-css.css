@@ -92,3 +92,55 @@ li {
 .tab-content .item.active {
   display: flex;
 }
+
+@media screen and (max-width: 600px) {
+  .tab {
+    max-width: 100%;
+    margin: 0 10px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .tab-nav {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+  }
+
+  .tab-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tab-nav li a {
+    width: 100px;
+    height: auto;
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .tab-content {
+    padding: 10px;
+    height: auto;
+  }
+
+  .tab-content .item {
+    position: static;
+    display: none;
+  }
+
+  .tab-content .item.active {
+    display: block;
+    text-align: center;
+  }
+
+  .tab-content .item img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+}
