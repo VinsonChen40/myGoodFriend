@@ -35,15 +35,9 @@ li {
   border-bottom: 1px solid #eee;
 }
 
-.tab-nav h3 {
-  font-size: 16px;
-  color: #333;
-  white-space: nowrap;
-  /* 防止 h3 換行 */
-}
-
 .tab-nav ul {
   display: flex;
+  margin-left: 50px;
 }
 
 .tab-nav li a {
