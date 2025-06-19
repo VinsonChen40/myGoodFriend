@@ -31,13 +31,15 @@ li {
   /* 垂直置中 */
   gap: 12px;
   /* 標題與 ul 之間留空 */
+  justify-content: center;
   padding: 20px;
   border-bottom: 1px solid #eee;
 }
 
 .tab-nav ul {
   display: flex;
-  margin-left: 50px;
+  margin: 0px 10px;
+
 }
 
 .tab-nav li a {
